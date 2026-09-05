@@ -14,7 +14,6 @@ import me.fzzyhmstrs.fzzy_config.validation.misc.ValidatedPair
 import me.fzzyhmstrs.fzzy_config.validation.misc.ValidatedPair.Companion.withLabels
 import me.fzzyhmstrs.fzzy_config.validation.number.ValidatedDouble
 import me.fzzyhmstrs.fzzy_config.validation.number.ValidatedInt
-import net.minecraft.core.registries.Registries
 import net.minecraft.network.chat.Component
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.level.Level
@@ -23,7 +22,7 @@ class WorldlyBoundsConfig : Config(id(MODID)) {
 
     @Suppress("DEPRECATION")
     var worldBoarders = ValidatedMap.Builder<ResourceLocation, BorderSettings>()
-        .keyHandler(ValidatedIdentifier.ofRegistryKey(Level.OVERWORLD.location(), Registries.DIMENSION))
+        .keyHandler(ValidatedIdentifier(Level.OVERWORLD.location()))
         .valueHandler(ValidatedAny(BorderSettings()))
         .defaults()
         .build()
