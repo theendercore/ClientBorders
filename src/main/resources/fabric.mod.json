@@ -6,27 +6,20 @@
   "description": "${mod_description}",
   "authors": [ "${authors}" ],
   "entrypoints": {
-    "main": [
-      {
-        "adapter": "kotlin",
-        "value": "org.teamvoided.template.Template::init"
-      }
-    ],
     "client": [
       {
         "adapter": "kotlin",
-        "value": "org.teamvoided.template.client.TemplateClient::init"
+        "value": "com.theendercore.worldy.bounds.client.WorldlyBounds::init"
       }
     ]
   },
   "mixins": [
-    "template.mixins.json",
     {
-      "config": "template.client.mixins.json",
+      "config": "worldly_bounds.client.mixins.json",
       "environment": "client"
     }
   ],
-  "accessWidener": "template.classtweaker",
+  "accessWidener": "worldly_bounds.classtweaker",
   "depends": {
     "java": ">=${java}",
     "minecraft": "${version_range}",
@@ -42,5 +35,5 @@
     "discord": "${discord_invite}"
   },
   "license": "${license}",
-  "icon": "assets/template/icon.png"
+  "icon": "assets/worldly_bounds/icon.png"
 }

@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.theendercore.worldy.bounds.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ClientLevelMixin",
+    "ClientPacketListenerMixin",
+    "LevelRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

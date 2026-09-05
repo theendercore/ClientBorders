@@ -1,2 +1,6 @@
-# The TeamVoided Template
-Template mod by TeamVoided
+# WorldlyBounds
+Client side world borders
+
+Future ideas:
+- Command / UI to edit borders
+- Multiple Borders per dimensions

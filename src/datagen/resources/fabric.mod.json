@@ -7,9 +7,11 @@
     "fabric-datagen": [
       {
         "adapter": "kotlin",
-        "value": "org.teamvoided.template.datagen.TemplateData"
+        "value": "com.theendercore.worldy.bounds.datagen.WorldlyBoundsData"
       }
     ]
   },
-  "mixins": [ "template.datagen.mixins.json" ]
+  "mixins": [
+    "worldly_bounds.datagen.mixins.json"
+  ]
 }
