@@ -21,6 +21,7 @@ object WorldlyBounds {
     fun init() {
         log.info("I love walking in to inviable walls!")
         ClientPlayConnectionEvents.JOIN.register { _, _, _ -> BorderHandler.reloadAllBorders() }
+        //TODO reload borders on resource pack reload
     }
 
     fun id(namespace: String, path: String): ResourceLocation = ResourceLocation.fromNamespaceAndPath(namespace, path)
